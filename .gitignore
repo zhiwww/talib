@@ -35,7 +35,15 @@ bower_components
 .lock-wscript
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
-build/Release
+build/
+build/Release/
+build/Debug/
+*.node
+
+# TA-Lib specific build artifacts
+lib/*.node
+src/binding.node
+src/*.node
 
 # Dependency directories
 node_modules/
@@ -137,3 +145,48 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Editor directories and files
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+*~
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Debug files
+debug.js
+debug*.js
+test*.js
+!test/
+!examples/
+
+# Local configuration files
+config/local.*
+local.*
+
+# Build artifacts for different platforms
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Documentation build
+docs/_build/
+docs/build/
+
+# Performance profiling
+*.cpuprofile
+*.heapprofile
